@@ -67,7 +67,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
               <a href="contact.html" class="nav-link">Contact Us</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"><?php echo "Welcome " . $_SESSION['name'] ?></a>
+                <a href="profile.php" class="nav-link"><?php echo "Welcome " . $_SESSION['name'] ?></a>
             </li>
         </ul>
 
@@ -75,9 +75,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <a href="login.html" class="icon">
               <i class="bx bx-user"></i>
             </a>
-            <a href="logout.php" class="icon">
-              <i class="bx bx-search"></i>
-            </a>
+            <a href="search.html" class="icon">
+            <i class="bx bx-search"></i>
+                </a>
             <div class="icon" >
               <i class="bx bx-heart"></i>
               <span class="d-flex">0</span>
@@ -85,6 +85,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
             <a href="cart.html" class="icon">
               <i class="bx bx-cart"></i>
               <span class="d-flex">0</span>
+            </a>
+            <a href="logout.php" class="icon">
+              <i class="bx bx-log-out"></i>
             </a>
           </div>
 
