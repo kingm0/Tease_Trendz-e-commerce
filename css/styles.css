@@ -868,6 +868,10 @@ box-shadow: 10px 10px 10px rgb(116, 84, 89);
     padding: 8rem 1rem;
   }
 }
+.c1 h1{
+  color: #1b4332;
+  font-size: 25px;
+}
 
 /* Footer */
 .footer {
@@ -1485,4 +1489,3 @@ th:last-child {
 .forgot{
   text-align: end;
 }
-

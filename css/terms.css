@@ -1,0 +1,42 @@
+.terms_cond{
+        padding: 50px;
+        text-align: center;
+        background-color: #e8fccf;
+        color: black;
+    
+}
+.terms_cond h1{
+    font-size: 60px;
+    padding: 10px;
+  
+}
+.desc{
+border: 2px solid black;
+margin-left: 20px;
+margin-right: 20px;
+margin: 20px 60px 0 60px;
+padding: 40px 40px;
+text-align: left;
+font-size: 20px;
+  }
+
+  .desc div{
+    margin: 25px 0 25px 0;
+  }
+  
+  .desc div h4{
+    padding-bottom: 7px;
+
+  }
+  .intro{
+    color:  #861657;
+    font-weight: 550;
+    font-size: 30px;
+  }
+  
+  .contact_det{
+    font-weight: 550;
+  }
+  .contact_det span{
+    color: #861657;
+  }
