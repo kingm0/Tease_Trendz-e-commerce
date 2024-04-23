@@ -1,0 +1,52 @@
+/* styles.css */
+
+.body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  text-align: right;
+  align-items: right;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px; /* Increase font size */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-info label {
+  font-weight: bold;
+  color: #555;
+  font-size: 28px; /* Increase font size */
+}
+
+.profile-info span {
+  color: #777;
+  padding: 8px;
+  font-size: 20px; /* Increase font size */
+}
+
+.profile-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info-item label {
+  min-width: 150px;
+}
