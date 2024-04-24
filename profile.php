@@ -33,7 +33,7 @@ $address = $_SESSION['address'];
         <p>Order Online Or Call Us: (001) 2222-55555</p>
         <ul class="d-flex">
             <li><a href="about.html">About Us</a></li>
-            <li><a href="terms.xml">FAQ</a></li>
+            <li><a href="terms.html">FAQ</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
