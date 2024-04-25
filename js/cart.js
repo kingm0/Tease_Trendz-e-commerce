@@ -19,14 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("mukul");
     totalPriceElements.forEach(function (element) {
       const price= parseFloat(element.textContent.replace("$", ""));
+      console.log(price)
       // const quantity = parseInt(element.querySelector("td:nth-child(2) input").value);
       const quantity=parseInt(quantity1[i].value);
-      console.log(quantity);
+      // console.log(quantity);
       subtotal+=parseFloat(initialprice[i].textContent.replace("$",""))*quantity;
       element.textContent="$"+parseFloat(initialprice[i].textContent.replace("$",""))*quantity;
       i++;
 
-      // console.log(element);
+      console.log(element);
     });
 
     const tax = subtotal * 0.25; // Example tax rate of 25%
