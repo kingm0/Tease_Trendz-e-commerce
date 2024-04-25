@@ -25,67 +25,80 @@ $address = $_SESSION['address'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
     <!-- Add your CSS link here -->
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Glide js -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <!-- google fonts-->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- icon library(star)-->
     <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <title>Tease_Trendz</title> -->
 </head>
 <body>
-    <div class="top-nav">
-    <div class="container d-flex">
-        <p>Order Online Or Call Us: (001) 2222-55555</p>
-        <ul class="d-flex">
+<header class="header" id="header">
+      <!--Nav 1 -->
+      <div class="top-nav">
+        <div class="container d-flex">
+          <p> </p>
+          <ul class="d-flex">
             <li><a href="about.html">About Us</a></li>
-            <li><a href="terms.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-</div>
-<div class="navigation">
-    <div class="nav-center container d-flex">
-        <a href="index.html" class="logo"><h1>The Mart</h1></a>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav 2-->
+      <div class="navigation">
+        <div class="nav-center container d-flex">
+        <a href="index.html" class="logo"><h1>Tease_Trendz</h1></a>
 
-        <ul class="nav-list d-flex">
+          <ul class="nav-list d-flex">
             <li class="nav-item">
-                <a href="index.php" class="nav-link">Home</a>
+              <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="product.html" class="nav-link">Shop</a>
+              <a href="product2.html" class="nav-link">Trends</a>
             </li>
             <li class="nav-item">
-                <a href="terms.xml" class="nav-link">Terms</a>
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
+              <a href="contact.html" class="nav-link">Contact Us</a>
             </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-        </ul>
+          </ul>
 
-        <div class="icons d-flex">
+          <div class="icons d-flex">
             <a href="login.html" class="icon">
-                <i class="bx bx-user"></i>
+              <i class="bx bx-user"></i>
             </a>
             <a href="search.html" class="icon">
-                <i class="bx bx-search"></i>
+              <i class="bx bx-search"></i>
             </a>
-            <div class="icon">
-                <i class="bx bx-heart"></i>
-                <span class="d-flex">0</span>
+            <div class="icon" >
+              <i class="bx bx-heart"></i>
+              <span class="d-flex">0</span>
             </div>
             <a href="cart.html" class="icon">
-                <i class="bx bx-cart"></i>
-                <span class="d-flex">0</span>
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
             </a>
-            <a href="logout.php" class="icon">
-                <i class="bx bx-log-out"></i>
-            </a>
-        </div>
+          </div>
 
-        <div class="hamburger">
+          <div class="hamburger">
             <i class="bx bx-menu-alt-left"></i>
+          </div>
         </div>
-    </div>
-</div>
-    <div class="container">
+      </div>
+
+    <div class="container cont">
     <h1 style="text-align: center;">User Profile</h1>
         <div class="profile-info">
             <div class="profile-info-item">
