@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         echo "Order placed successfully!";
+         echo "<script src='js/checkout.js'></script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
