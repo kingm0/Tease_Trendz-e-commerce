@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let subtotal = 0,i=0;
     console.log("mukul");
     totalPriceElements.forEach(function (element) {
-      const price= parseFloat(element.textContent.replace("Rs. ", ""));
+      const price= parseFloat(element.textContent.replace("$", ""));
       // const quantity = parseInt(element.querySelector("td:nth-child(2) input").value);
       const quantity=parseInt(quantity1[i].value);
       console.log(quantity);
-      subtotal+=parseFloat(initialprice[i].textContent.replace("Rs. ",""))*quantity;
-      element.textContent="$"+parseFloat(initialprice[i].textContent.replace("Rs. ",""))*quantity;
+      subtotal+=parseFloat(initialprice[i].textContent.replace("$",""))*quantity;
+      element.textContent="$"+parseFloat(initialprice[i].textContent.replace("$",""))*quantity;
       i++;
 
       // console.log(element);
@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const tax = subtotal * 0.25; // Example tax rate of 25%
     const total = subtotal + tax;
 
-    document.querySelector(".total-price table tr:nth-child(1) td:nth-child(2)").textContent = "Rs. " + subtotal.toFixed(2);
-    document.querySelector(".total-price table tr:nth-child(2) td:nth-child(2)").textContent = "Rs. " + tax.toFixed(2);
-    document.querySelector(".total-price table tr:nth-child(3) td:nth-child(2)").textContent = "Rs. " + total.toFixed(2);
+    document.querySelector(".total-price table tr:nth-child(1) td:nth-child(2)").textContent = "$" + subtotal.toFixed(2);
+    document.querySelector(".total-price table tr:nth-child(2) td:nth-child(2)").textContent = "$" + tax.toFixed(2);
+    document.querySelector(".total-price table tr:nth-child(3) td:nth-child(2)").textContent = "$" + total.toFixed(2);
   }
   const quantityInputs = document.querySelectorAll(".cart_price table td:nth-child(2) input");
   quantityInputs.forEach(function (input) {
