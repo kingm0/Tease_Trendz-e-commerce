@@ -234,3 +234,26 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE contact_logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  phone_no VARCHAR(15) NOT NULL,
+  brief_of_problem VARCHAR(255) NOT NULL,
+  description_of_problem TEXT NOT NULL,
+  contact_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DELIMITER //
+
+CREATE TRIGGER log_contact_details
+AFTER INSERT ON contact_us
+FOR EACH ROW
+BEGIN
+    -- Insert new contact details into contact_logs table
+    INSERT INTO contact_logs (full_name, email, phone_no, brief_of_problem, description_of_problem, contact_time)
+    VALUES (NEW.full_name, NEW.email, NEW.phone_no, NEW.brief_of_problem, NEW.description_of_problem, NOW());
+END;
+//
+
+DELIMITER ;
